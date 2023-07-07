@@ -1,42 +1,218 @@
-
-
-
-
-.App {
-  text-align: center;
+td,
+th {
+  border: 1px solid #dee2e6;
+  padding: 20px 30px;
+}
+.open_menu {
+  transition: 0.4s all !important;
+}
+.active {
+  color: #7971ea;
+}
+.header {
+  background-image: url(./assets/images/hero_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.header_btn {
+  font-size: 14px;
+  transition: 0.4s all;
+}
+.header_btn:hover {
+  transform: translateY(-2px);
+}
+.home_collection_card::before {
+  z-index: 1;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 18%,
+    rgba(0, 0, 0, 0.8) 99%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.home_collection_card {
+  overflow: hidden;
+  position: relative;
+}
+.home_collection_card img {
+  transition: 0.3s all;
+  overflow: hidden;
+}
+.home_collection_card:hover img {
+  transform: scale(1.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.swiper-button-next {
+  margin-top: 190px !important;
+  margin-right: 100px;
+  transform: scale(0.6);
+}
+.swiper-button-prev {
+  margin-top: 190px !important;
+  margin-left: 100px;
+  transform: scale(0.6);
+}
+.footer_top a {
+  transition: 0.4s all;
+  color: #5c626e;
+  font-size: 16px;
+}
+.footer_top a:hover {
+  color: #7971ea;
+}
+.footer_top span {
+  color: #7971ea;
+  font-size: 20px;
+}
+.home_collection_text {
+  color: #fff !important;
+  z-index: 20;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.dropdown1 {
+  transition: 0.4s all;
+}
+.dropdown1:hover {
+  transform: translateY(-2px);
+}
+.dropdown2 {
+  transition: 0.4s all;
+}
+.dropdown2:hover {
+  transform: translateY(-2px);
+}
+.about_Card_btn {
+  width: 34px;
+  height: 43px;
+  transition: 0.4s all;
+}
+.about_Card_btn:hover {
+  transform: translateY(-2px);
+  color: #fff;
+}
+.about_add_card {
+  transition: 0.4s all;
+}
+.about_add_card:hover {
+  transform: translateY(-2px);
+}
+
+.basket_table .remove_btn {
+  border-radius: 5px;
+  transition: 0.4s all;
+}
+.basket_table .remove_btn:hover {
+  transform: translateY(-2px);
+}
+.cupon_btn {
+  transition: 0.4s all;
+  color: #fff;
+}
+.cupon_btn:hover {
+  transform: translateY(-2px);
+}
+.cupon_btn1 {
+  transition: 0.4s all;
+  color: #7971ea;
+}
+.cupon_btn1:hover {
+  transform: translateY(-2px);
+  background: #7971ea;
+  color: #fff;
+}
+@media screen and (max-width: 1366px) {
+  .swiper-button-next {
+    margin-top: 190px !important;
+    margin-right: 490px;
+  }
+  .swiper-button-prev {
+    margin-top: 190px !important;
+    margin-left: 490px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .swiper-button-next {
+    margin-top: 190px !important;
+    margin-right: 390px;
+  }
+  .swiper-button-prev {
+    margin-top: 190px !important;
+    margin-left: 390px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swiper-button-next {
+    margin-top: 190px !important;
+    margin-right: 280px;
+  }
+  .swiper-button-prev {
+    margin-top: 190px !important;
+    margin-left: 280px;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* .basket_table {
+    width: 500px;
+  } */
+  .basket_table {
+    overflow-x: scroll;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 425px) {
+  .swiper-button-next {
+    margin-top: 190px !important;
+    margin-right: 100px;
   }
-  to {
-    transform: rotate(360deg);
+  .swiper-button-prev {
+    margin-top: 190px !important;
+    margin-left: 100px;
+  }
+  .shop_shop_all {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .dropdown1 {
+    margin-right: 0px;
+  }
+  .dropdown2 {
+    margin-right: -110px;
+  }
+  .pagination {
+    margin-right: -125px;
+  }
+  .contac_page_cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_bug {
+    display: flex;
+    flex-direction: column;
+  }
+  .about_Card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .basket_cupon,
+  .cupon_column,
+  .checkout_cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    padding-bottom: 350px;
+  }
+  .header_text {
+    margin-top: -90px;
   }
 }
